@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="no">
-
 <head>
-    <title>Side 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min nettside</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 400px;
+            display: block;
+            margin: 30px auto;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
-<h1>Test fra den stasjonære</h1>
-    <h1>Dette er side 2!</h1>
 
-    <p>Du har kommet deg til side 2.</p>
+    <h1>Min nettside</h1>
 
-    <a href="mappenr2.html">
-        <button>Tilbake til hjem</button>
-    </a>
-<h1>Test fra den stasjonære</h1>
+    <img src="https://picsum.photos/400/300" alt="Et bilde">
+
+    <p>
+        Dette er teksten som står under bildet.
+    </p>
+<button onclick="meny()">☰</button>
+
+<div id="meny" style="display: none;">
+    <a href="index.html">Hjem</a>
+    <a href="mappenr2.html">Side 2</a>
+    <a href="side3.html">Side 3</a>
+</div>
+
+<script>
+    function meny() {
+        let meny = document.getElementById("meny");
+
+        if (meny.style.display === "none") {
+            meny.style.display = "block";
+        } else {
+            meny.style.display = "none";
+        }
+    }
+</script>
+
 </body>
-
 </html>
