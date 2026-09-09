@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .boks {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .boks img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mine interesser</h1>
+
+    <div class="container">
+
+        <div class="boks">
+            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600" alt="Kampsport">
+            <h2>Kampsport</h2>
+            <p>
+                Kampsport er en av mine store interesser. 
+                Jeg liker spesielt MMA og brasiliansk jiu-jitsu.
+            </p>
+        </div>
+
+        <div class="boks">
+            <img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=600" alt="Sjakk">
+            <h2>Sjakk</h2>
+            <p>
+                Sjakk er en annen interesse jeg har. 
+                Jeg liker kombinasjonen av strategi og problemløsning.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
